@@ -1,0 +1,280 @@
+@font-face {
+  font-family: "Noto Sans Arabic";
+  src: url("/fonts/noto-sans-arabic.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+  unicode-range:
+    U+0600-06FF, U+0750-077F, U+0870-089F, U+08A0-08FF, U+200C-200E,
+    U+FB50-FDFF, U+FE70-FEFF;
+}
+
+.language-select {
+  width: auto;
+  flex-shrink: 0;
+  min-height: 44px;
+  min-width: 105px;
+  padding-block: 8px;
+  padding-inline: 12px 28px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--berry);
+  font-family: "Noto Sans Arabic", "DM Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.7;
+}
+.language-select:hover {
+  background: #efe3df;
+}
+.header-inner {
+  gap: 20px;
+}
+.wordmark {
+  margin-inline-end: auto;
+}
+.main-nav {
+  gap: 22px;
+}
+.header-cta {
+  margin-inline-start: 4px;
+}
+.wordmark bdi,
+.footer-brand span {
+  font-family: "DM Serif", Georgia, serif;
+}
+.footer-brand span {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+#email,
+#phone,
+#date,
+.contact-email,
+.contact-phone {
+  direction: ltr;
+  text-align: left;
+}
+#inquiry-summary {
+  unicode-bidi: plaintext;
+}
+
+:root[lang="ar"] {
+  font-family: "Noto Sans Arabic", "DM Sans", Arial, sans-serif;
+  --serif: "Noto Sans Arabic", "DM Sans", Arial, sans-serif;
+}
+:root[lang="ar"]
+  :is(
+    h1,
+    h2,
+    h3,
+    .eyebrow,
+    .announcement,
+    .wordmark small,
+    .values-ribbon .container,
+    .hero-stamp > span,
+    .product-tag
+  ) {
+  letter-spacing: normal;
+}
+:root[lang="ar"] :is(h1, h2, h3) {
+  line-height: 1.55;
+  font-weight: 500;
+}
+:root[lang="ar"] h1 {
+  font-size: clamp(46px, 4.7vw, 66px);
+  margin-block: 18px;
+}
+:root[lang="ar"] em,
+:root[lang="ar"] .footer-top p,
+:root[lang="ar"] .story-caption {
+  font-style: normal;
+}
+:root[lang="ar"] .wordmark small {
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-size: 11px;
+}
+:root[lang="ar"] .hero .eyebrow {
+  font-size: 12px;
+}
+:root[lang="ar"] .eyebrow {
+  font-size: 12px;
+}
+:root[lang="ar"] .hero-description {
+  font-size: 16px;
+  line-height: 2;
+}
+:root[lang="ar"] .hero-actions {
+  gap: 18px;
+}
+:root[lang="ar"] .hero-signoff {
+  font-size: 12px;
+}
+:root[lang="ar"] .section-top > p {
+  font-size: 13px;
+}
+:root[lang="ar"] .product-info p,
+:root[lang="ar"] .process-grid p {
+  font-size: 13px;
+  line-height: 1.95;
+}
+:root[lang="ar"] .story-copy > p:not(.eyebrow) {
+  font-size: 14px;
+}
+:root[lang="ar"] .product-info h3 {
+  font-size: 23px;
+}
+:root[lang="ar"] .order-intro h2 {
+  font-size: 50px;
+}
+:root[lang="ar"]
+  :is(
+    .field label,
+    fieldset legend,
+    .step-heading p,
+    .field-error,
+    .consent-label
+  ) {
+  font-size: 13px;
+}
+:root[lang="ar"]
+  :is(.field-hint, .check-pill, .form-footnote, .privacy-note, .optional) {
+  font-size: 11px;
+  line-height: 1.85;
+}
+:root[lang="ar"] :is(.field-meta, .collection-disclaimer, .contact-preview) {
+  font-size: 10px;
+}
+:root[lang="ar"] .form-progress {
+  gap: 10px;
+}
+:root[lang="ar"] .form-progress li {
+  font-size: 11px;
+}
+:root[lang="ar"]
+  :is(.button, .filter-button, .product-link, .underlined-link, .text-button) {
+  font-size: 12px;
+}
+:root[lang="ar"] .hero-stamp > span {
+  font-size: 9px;
+}
+:root[lang="ar"] .hero-stamp em {
+  font-size: 21px;
+}
+:root[lang="ar"] .hero-photo-note {
+  font-size: 13px;
+  font-style: normal;
+}
+:root[lang="ar"] .inquiry-result > p:not(.eyebrow),
+:root[lang="ar"] details p {
+  font-size: 13px;
+}
+:root[lang="ar"] #inquiry-summary {
+  font-family: "Noto Sans Arabic", "DM Sans", sans-serif;
+  font-size: 13px;
+  line-height: 2;
+}
+:root[dir="rtl"]
+  :is(
+    .button svg,
+    .underlined-link svg,
+    .product-pick svg,
+    .footer-link svg,
+    .contact-email svg,
+    .product-link span
+  ) {
+  transform: scaleX(-1);
+}
+
+@media (max-width: 1050px) {
+  .language-select {
+    align-self: flex-start;
+    margin-top: 12px;
+    font-size: 16px;
+  }
+  .main-nav {
+    gap: 5px;
+  }
+  .header-cta {
+    margin-inline-start: 0;
+  }
+  :root[lang="ar"] .custom-grid {
+    grid-template-columns: 1fr 1.7fr;
+    gap: 24px;
+  }
+  :root[lang="ar"] .order-intro h2 {
+    font-size: 37px;
+  }
+  :root[lang="ar"] .form-progress li {
+    font-size: 10px;
+  }
+}
+@media (max-width: 640px) {
+  .header-inner {
+    gap: 10px;
+  }
+  :root[lang="ar"] h1 {
+    font-size: 51px;
+  }
+  :root[lang="ar"] .custom-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  :root[lang="ar"] .order-intro h2 {
+    font-size: 40px;
+  }
+  :root[lang="ar"] .hero-actions {
+    align-items: flex-start;
+  }
+  :root[lang="ar"] .hero-stamp > span {
+    font-size: 8px;
+  }
+  :root[lang="ar"] .hero-stamp em {
+    font-size: 19px;
+  }
+  :root[lang="ar"] .hero-photo-note {
+    font-size: 12px;
+  }
+  :root[lang="ar"] .form-progress li {
+    font-size: 11px;
+  }
+  :root[lang="ar"] .step-heading h3 {
+    font-size: 24px;
+  }
+  :root[lang="ar"] .values-ribbon .container {
+    font-size: 11px;
+  }
+}
+@media (max-width: 370px) {
+  .header-inner {
+    gap: 8px;
+  }
+  .wordmark {
+    gap: 8px;
+  }
+  .wordmark > span {
+    font-size: 21px;
+  }
+  .wordmark > svg {
+    width: 28px;
+    height: 28px;
+  }
+  .wordmark small {
+    font-size: 6px;
+    letter-spacing: 1.7px;
+  }
+  .menu-toggle {
+    width: 38px;
+    flex-shrink: 0;
+  }
+  :root[lang="ar"] h1 {
+    font-size: 44px;
+  }
+  :root[lang="ar"] .form-progress li {
+    font-size: 9px;
+    gap: 5px;
+  }
+  :root[lang="ar"] .hero-photo-note {
+    font-size: 10px;
+  }
+}
